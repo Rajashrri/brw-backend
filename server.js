@@ -27,26 +27,26 @@ const connectDB = require("./utils/db");
 const errorMiddleware = require("./middlewares/validate-middleware");
 const errorMiddleware1 = require("./middlewares/error-middleware");
 
-//for googlesignup 
-const passport = require("passport");
-const session = require("express-session");
-require("./passport");
+// //for googlesignup 
+// const passport = require("passport");
+// const session = require("express-session");
+// require("./passport");
 
-app.use(session({
-    secret: process.env.JWT_SECRET_KEY1 || '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',
-    resave: false,
-    saveUninitialized: true,
-    cookie: {
-        maxAge: 24 * 60 * 60 * 1000, // 1 day
-        httpOnly: true,
-        secure: false, // true only if you have HTTPS
-        sameSite: 'lax',
-    }
-}));
+// app.use(session({
+//     secret: process.env.JWT_SECRET_KEY1 || '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',
+//     resave: false,
+//     saveUninitialized: true,
+//     cookie: {
+//         maxAge: 24 * 60 * 60 * 1000, // 1 day
+//         httpOnly: true,
+//         secure: false, // true only if you have HTTPS
+//         sameSite: 'lax',
+//     }
+// }));
 
-// Initialize Passport
-app.use(passport.initialize());
-app.use(passport.session());
+// // Initialize Passport
+// app.use(passport.initialize());
+// app.use(passport.session());
 
 // handling cors
 const corsoptions = {

@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const URI = "mongodb://127.0.0.1:27017/Mern";
-// const URI = "mongodb+srv://digihost2021:E1IBiNmZzhWtKDyB@cluster0.c1qye.mongodb.net/test";
+//const URI = "mongodb://127.0.0.1:27017/Mern";
+const URI = "mongodb+srv://rajashrichougule:9pqmjMI3blFG80D5@cluster0.kv5nlkj.mongodb.net";
 // mongoose.connect(URI);
 
 const connectDB = async () => {
