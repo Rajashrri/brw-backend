@@ -1,0 +1,25 @@
+@use "./../abstract/variables" as v;
+@use "./../abstract/mixins" as m;
+
+.gallery {
+  .gallery__item {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+a.gallery__item {
+  height: 260px !important;
+}
+.gallery-card-type-2 {
+  .gallery-overlay {
+    transform: translateY(-100%);
+    transition: all 0.3s linear;
+  }
+  &:hover {
+    .gallery-overlay {
+      transform: translateY(0%);
+    }
+  }
+}
