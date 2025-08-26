@@ -50,7 +50,7 @@ const errorMiddleware1 = require("./middlewares/error-middleware");
 
 // handling cors
 const corsoptions = {
-	origin:['brw-frontend-n9ks655v5-rajashri-chougules-projects.vercel.app','http://localhost:3001','https://comingsoon.digihostinfra.com','https://theme.digihostinfra.com','https://admin.digihostinfra.com'  ,
+	origin:['https://brw-frontend-zm9p.vercel.app','http://localhost:3001','https://comingsoon.digihostinfra.com','https://theme.digihostinfra.com','https://admin.digihostinfra.com'  ,
 		'https://creator-club.digihostinfra.com/'], 
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     credentials:true  
